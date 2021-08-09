@@ -7,7 +7,7 @@ Class minecraft {
     source => 'https://s3.amazonaws.com/Minecraft.Download/versions/1.12.1/minecraft_server.1.12.1.jar',
   }
   package {'java':
-  ensure => present,
+    ensure => present,
   }
   file {'/opt/minecraft/eula.txt':
     ensure => file,
